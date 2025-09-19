@@ -1,0 +1,20 @@
+---
+general:
+  cpiApiServiceKeyCredentialsId: "desgauthapikey"
+  integrationFlowId: "calling_iflows_from_other_cpi_account"
+service:
+  stages:
+    Upload:
+      stringVariables:
+      - name: "Address"
+        value: "https://217eeb7etrial.it-cpitrial06-rt.cfapps.us10-001.hana.ondemand.com/http/thisisforprod"
+stages:
+  Upload:
+    enabled: true
+  Deploy:
+    enabled: true
+  Integration Test:
+    enabled: false
+steps:
+  integrationArtifactUpload:
+    integrationFlowName: "calling iflows from other cpi account Created"
